@@ -18,13 +18,13 @@
         document.body.appendChild(_m);
         var _egg = {
             _ss: [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
-			_n: 2,
+            _debug: 2,
             _s: 0,
             _p: 0,
             bind: function(e) {
                 var _e = e || window.event;
                 (_e.keyCode == _egg._ss[_egg._s]) 
-				? (_egg._s == _egg._n-1 ? _egg._got() : ++_egg._s) 
+				? (_egg._s == _egg._debug-1 ? _egg._got() : ++_egg._s) 
 				: (_egg._s = 0);
                 return true;
             },
